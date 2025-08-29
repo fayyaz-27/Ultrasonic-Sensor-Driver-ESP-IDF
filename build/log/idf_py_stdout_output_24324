@@ -1,0 +1,392 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 29 2025 22:38:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09a1ch ( 39452) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=00019a44 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=00019a68 vaddr=3ffb0000 size=02314h (  8980) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001bd84 vaddr=40080000 size=04294h ( 17044) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=13a54h ( 80468) map[0m
+[0;32mI (150) esp_image: segment 5: paddr=00033a7c vaddr=40084294 size=089a0h ( 35232) load[0m
+[0;32mI (170) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (170) boot: Disabling RNG early entropy source...[0m
+[0;32mI (180) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (189) app_init: Project name:     ultasonic_driver[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     Aug 29 2025 22:36:38[0m
+[0;32mI (202) app_init: ELF file SHA256:  bc0b26510...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (228) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB2BD0 len 0002D430 (181 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (249) heap_init: At 4008CC34 len 000133CC (76 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (258) spi_flash: flash io: dio[0m
+[0;33mW (261) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (274) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+[0;32mI (284) Ultrasonic Sensor: Distance: 78.07 cm[0m
+[0;32mI (334) Ultrasonic Sensor: Distance: 77.66 cm[0m
+[0;32mI (384) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (434) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (484) Ultrasonic Sensor: Distance: 78.10 cm[0m
+[0;32mI (534) Ultrasonic Sensor: Distance: 76.42 cm[0m
+[0;32mI (584) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (634) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (684) Ultrasonic Sensor: Distance: 112.59 cm[0m
+[0;32mI (734) Ultrasonic Sensor: Distance: 76.42 cm[0m
+[0;32mI (784) Ultrasonic Sensor: Distance: 78.10 cm[0m
+[0;32mI (834) Ultrasonic Sensor: Distance: 78.10 cm[0m
+[0;32mI (884) Ultrasonic Sensor: Distance: 113.81 cm[0m
+[0;32mI (934) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (984) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (1034) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (1084) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (1134) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (1184) Ultrasonic Sensor: Distance: 77.23 cm[0m
+[0;32mI (1234) Ultrasonic Sensor: Distance: 79.34 cm[0m
+[0;32mI (1284) Ultrasonic Sensor: Distance: 126.14 cm[0m
+[0;32mI (1334) Ultrasonic Sensor: Distance: 124.01 cm[0m
+[0;32mI (1384) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (1434) Ultrasonic Sensor: Distance: 124.03 cm[0m
+[0;32mI (1484) Ultrasonic Sensor: Distance: 125.26 cm[0m
+[0;32mI (1534) Ultrasonic Sensor: Distance: 113.40 cm[0m
+[0;32mI (1584) Ultrasonic Sensor: Distance: 114.25 cm[0m
+[0;32mI (1634) Ultrasonic Sensor: Distance: 77.66 cm[0m
+[0;32mI (1684) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (1734) Ultrasonic Sensor: Distance: 76.42 cm[0m
+[0;32mI (1784) Ultrasonic Sensor: Distance: 78.10 cm[0m
+[0;32mI (1834) Ultrasonic Sensor: Distance: 78.10 cm[0m
+[0;32mI (1884) Ultrasonic Sensor: Distance: 78.10 cm[0m
+[0;32mI (1934) Ultrasonic Sensor: Distance: 76.42 cm[0m
+[0;32mI (1984) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (2034) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (2084) Ultrasonic Sensor: Distance: 78.10 cm[0m
+[0;32mI (2134) Ultrasonic Sensor: Distance: 77.66 cm[0m
+[0;32mI (2184) Ultrasonic Sensor: Distance: 122.64 cm[0m
+[0;32mI (2234) Ultrasonic Sensor: Distance: 78.08 cm[0m
+[0;32mI (2284) Ultrasonic Sensor: Distance: 78.07 cm[0m
+[0;32mI (2334) Ultrasonic Sensor: Distance: 126.14 cm[0m
+[0;32mI (2384) Ultrasonic Sensor: Distance: 78.10 cm[0m
+[0;32mI (2434) Ultrasonic Sensor: Distance: 77.64 cm[0m
+[0;32mI (2484) Ultrasonic Sensor: Distance: 77.66 cm[0m
+[0;32mI (2534) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (2584) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (2634) Ultrasonic Sensor: Distance: 77.66 cm[0m
+[0;32mI (2684) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (2734) Ultrasonic Sensor: Distance: 76.42 cm[0m
+[0;32mI (2784) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (2834) Ultrasonic Sensor: Distance: 113.40 cm[0m
+[0;32mI (2884) Ultrasonic Sensor: Distance: 115.92 cm[0m
+[0;32mI (2934) Ultrasonic Sensor: Distance: 78.08 cm[0m
+[0;32mI (2984) Ultrasonic Sensor: Distance: 115.03 cm[0m
+[0;32mI (3034) Ultrasonic Sensor: Distance: 118.01 cm[0m
+[0;32mI (3084) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (3134) Ultrasonic Sensor: Distance: 115.01 cm[0m
+[0;32mI (3184) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (3234) Ultrasonic Sensor: Distance: 77.64 cm[0m
+[0;32mI (3284) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (3334) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (3384) Ultrasonic Sensor: Distance: 77.66 cm[0m
+[0;32mI (3434) Ultrasonic Sensor: Distance: 77.64 cm[0m
+[0;32mI (3484) Ultrasonic Sensor: Distance: 77.67 cm[0m
+[0;32mI (3534) Ultrasonic Sensor: Distance: 77.66 cm[0m
+[0;32mI (3584) Ultrasonic Sensor: Distance: 79.32 cm[0m
+[0;32mI (3634) Ultrasonic Sensor: Distance: 122.64 cm[0m
+[0;32mI (3684) Ultrasonic Sensor: Distance: 77.66 cm[0m
+[0;32mI (3734) Ultrasonic Sensor: Distance: 77.66 cm[0m
+[0;32mI (3784) Ultrasonic Sensor: Distance: 77.64 cm[0m
+[0;32mI (3834) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (3884) Ultrasonic Sensor: Distance: 76.42 cm[0m
+[0;32mI (3934) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (3984) Ultrasonic Sensor: Distance: 76.44 cm[0m
+[0;32mI (4034) Ultrasonic Sensor: Distance: 76.87 cm[0m
+[0;32mI (4084) Ultrasonic Sensor: Distance: 76.87 cm[0m
+[0;32mI (4134) Ultrasonic Sensor: Distance: 76.87 cm[0m
+[0;32mI (4184) Ultrasonic Sensor: Distance: 76.87 cm[0m
+[0;32mI (4234) Ultrasonic Sensor: Distance: 76.87 cm[0m
+[0;32mI (4284) Ultrasonic Sensor: Distance: 76.88 cm[0m
+[0;32mI (4334) Ultrasonic Sensor: Distance: 118.01 cm[0m
+[0;32mI (4384) Ultrasonic Sensor: Distance: 78.98 cm[0m
+[0;32mI (4434) Ultrasonic Sensor: Distance: 78.98 cm[0m
+[0;32mI (4484) Ultrasonic Sensor: Distance: 76.87 cm[0m
+[0;32mI (4534) Ultrasonic Sensor: Distance: 76.85 cm[0m
+[0;32mI (4584) Ultrasonic Sensor: Distance: 79.40 cm[0m
+[0;32mI (4634) Ultrasonic Sensor: Distance: 78.98 cm[0m
+[0;32mI (4684) Ultrasonic Sensor: Distance: 118.46 cm[0m
+[0;32mI (4734) Ultrasonic Sensor: Distance: 79.40 cm[0m
+[0;32mI (4784) Ultrasonic Sensor: Distance: 77.30 cm[0m
+[0;32mI (4834) Ultrasonic Sensor: Distance: 77.30 cm[0m
+[0;32mI (4884) Ultrasonic Sensor: Distance: 79.40 cm[0m
+[0;32mI (4934) Ultrasonic Sensor: Distance: 76.87 cm[0m
+[0;32mI (4984) Ultrasonic Sensor: Distance: 9.11 cm[0m
+[0;32mI (5034) Ultrasonic Sensor: Distance: 11.20 cm[0m
+[0;32mI (5084) Ultrasonic Sensor: Distance: 14.42 cm[0m
+[0;32mI (5134) Ultrasonic Sensor: Distance: 78.53 cm[0m
+[0;32mI (5184) Ultrasonic Sensor: Distance: 77.76 cm[0m
+[0;32mI (5234) Ultrasonic Sensor: Distance: 76.95 cm[0m
+[0;32mI (5284) Ultrasonic Sensor: Distance: 77.07 cm[0m
+[0;32mI (5334) Ultrasonic Sensor: Distance: 77.05 cm[0m
+[0;32mI (5384) Ultrasonic Sensor: Distance: 115.23 cm[0m
+[0;32mI (5434) Ultrasonic Sensor: Distance: 125.07 cm[0m
+[0;32mI (5484) Ultrasonic Sensor: Distance: 130.32 cm[0m
+[0;32mI (5564) Ultrasonic Sensor: Distance: 0.00 cm[0m
+[0;32mI (5644) Ultrasonic Sensor: Distance: 0.00 cm[0m
+[0;32mI (5694) Ultrasonic Sensor: Distance: 113.12 cm[0m
+[0;32mI (5774) Ultrasonic Sensor: Distance: 0.00 cm[0m
+[0;32mI (5854) Ultrasonic Sensor: Distance: 0.00 cm[0m
+[0;32mI (5904) Ultrasonic Sensor: Distance: 84.40 cm[0m
+[0;32mI (5954) Ultrasonic Sensor: Distance: 112.78 cm[0m
+[0;32mI (6024) Ultrasonic Sensor: Distance: 425.49 cm[0m
+[0;32mI (6074) Ultrasonic Sensor: Distance: 129.21 cm[0m
+[0;32mI (6124) Ultrasonic Sensor: Distance: 127.10 cm[0m
+[0;32mI (6174) Ultrasonic Sensor: Distance: 127.20 cm[0m
+[0;32mI (6254) Ultrasonic Sensor: Distance: 0.00 cm[0m
+[0;32mI (6314) Ultrasonic Sensor: Distance: 292.10 cm[0m
+[0;32mI (6374) Ultrasonic Sensor: Distance: 267.71 cm[0m
+[0;32mI (6434) Ultrasonic Sensor: Distance: 268.31 cm[0m
+[0;32mI (6494) Ultrasonic Sensor: Distance: 290.66 cm[0m
+[0;32mI (6554) Ultrasonic Sensor: Distance: 291.55 cm[0m
+[0;32mI (6614) Ultrasonic Sensor: Distance: 292.85 cm[0m
+[0;32mI (6674) Ultrasonic Sensor: Distance: 267.39 cm[0m
+[0;32mI (6734) Ultrasonic Sensor: Distance: 270.06 cm[0m
+[0;32mI (6794) Ultrasonic Sensor: Distance: 265.33 cm[0m
+[0;32mI (6854) Ultrasonic Sensor: Distance: 259.99 cm[0m
+[0;32mI (6914) Ultrasonic Sensor: Distance: 300.21 cm[0m
+[0;32mI (6974) Ultrasonic Sensor: Distance: 255.86 cm[0m
+[0;32mI (7034) Ultrasonic Sensor: Distance: 260.15 cm[0m
+[0;32mI (7094) Ultrasonic Sensor: Distance: 256.91 cm[0m
+[0;32mI (7154) Ultrasonic Sensor: Distance: 258.11 cm[0m
+[0;32mI (7214) Ultrasonic Sensor: Distance: 257.25 cm[0m
+[0;32mI (7274) Ultrasonic Sensor: Distance: 253.82 cm[0m
+[0;32mI (7334) Ultrasonic Sensor: Distance: 250.90 cm[0m
+[0;32mI (7394) Ultrasonic Sensor: Distance: 250.44 cm[0m
+[0;32mI (7454) Ultrasonic Sensor: Distance: 248.25 cm[0m
+[0;32mI (7514) Ultrasonic Sensor: Distance: 247.11 cm[0m
+[0;32mI (7574) Ultrasonic Sensor: Distance: 247.11 cm[0m
+[0;32mI (7634) Ultrasonic Sensor: Distance: 244.22 cm[0m
+[0;32mI (7694) Ultrasonic Sensor: Distance: 243.55 cm[0m
+[0;32mI (7754) Ultrasonic Sensor: Distance: 240.72 cm[0m
+[0;32mI (7814) Ultrasonic Sensor: Distance: 240.29 cm[0m
+[0;32mI (7874) Ultrasonic Sensor: Distance: 238.18 cm[0m
+[0;32mI (7934) Ultrasonic Sensor: Distance: 238.28 cm[0m
+[0;32mI (7994) Ultrasonic Sensor: Distance: 236.96 cm[0m
+[0;32mI (8054) Ultrasonic Sensor: Distance: 236.98 cm[0m
+[0;32mI (8114) Ultrasonic Sensor: Distance: 235.69 cm[0m
+[0;32mI (8174) Ultrasonic Sensor: Distance: 234.53 cm[0m
+[0;32mI (8234) Ultrasonic Sensor: Distance: 236.28 cm[0m
+[0;32mI (8294) Ultrasonic Sensor: Distance: 235.68 cm[0m
+[0;32mI (8354) Ultrasonic Sensor: Distance: 233.50 cm[0m
+[0;32mI (8414) Ultrasonic Sensor: Distance: 235.14 cm[0m
+[0;32mI (8474) Ultrasonic Sensor: Distance: 234.27 cm[0m
+[0;32mI (8534) Ultrasonic Sensor: Distance: 233.50 cm[0m
+[0;32mI (8594) Ultrasonic Sensor: Distance: 234.71 cm[0m
+[0;32mI (8654) Ultrasonic Sensor: Distance: 218.89 cm[0m
+[0;32mI (8714) Ultrasonic Sensor: Distance: 237.96 cm[0m
+[0;32mI (8774) Ultrasonic Sensor: Distance: 238.30 cm[0m
+[0;32mI (8834) Ultrasonic Sensor: Distance: 223.07 cm[0m
+[0;32mI (8894) Ultrasonic Sensor: Distance: 221.77 cm[0m
+[0;32mI (8954) Ultrasonic Sensor: Distance: 249.02 cm[0m
+[0;32mI (9014) Ultrasonic Sensor: Distance: 222.42 cm[0m
+[0;32mI (9074) Ultrasonic Sensor: Distance: 224.58 cm[0m
+[0;32mI (9134) Ultrasonic Sensor: Distance: 246.58 cm[0m
+[0;32mI (9194) Ultrasonic Sensor: Distance: 242.42 cm[0m
+[0;32mI (9244) Ultrasonic Sensor: Distance: 46.49 cm[0m
+[0;32mI (9294) Ultrasonic Sensor: Distance: 49.48 cm[0m
+[0;32mI (9354) Ultrasonic Sensor: Distance: 244.06 cm[0m
+[0;32mI (9434) Ultrasonic Sensor: Distance: 0.00 cm[0m
+[0;32mI (9494) Ultrasonic Sensor: Distance: 247.75 cm[0m
+[0;32mI (9554) Ultrasonic Sensor: Distance: 246.07 cm[0m
+[0;32mI (9614) Ultrasonic Sensor: Distance: 245.64 cm[0m
+[0;32mI (9674) Ultrasonic Sensor: Distance: 253.56 cm[0m
+[0;32mI (9734) Ultrasonic Sensor: Distance: 252.17 cm[0m
+[0;32mI (9794) Ultrasonic Sensor: Distance: 252.88 cm[0m
+[0;32mI (9874) Ultrasonic Sensor: Distance: 0.00 cm[0m
+[0;32mI (9924) Ultrasonic Sensor: Distance: 9.81 cm[0m
+[0;32mI (9974) Ultrasonic Sensor: Distance: 10.07 cm[0m
+[0;32mI (10024) Ultrasonic Sensor: Distance: 11.11 cm[0m
+[0;32mI (10074) Ultrasonic Sensor: Distance: 10.15 cm[0m
+[0;32mI (10124) Ultrasonic Sensor: Distance: 11.20 cm[0m
+[0;32mI (10204) Ultrasonic Sensor: Distance: 0.00 cm[0m
+[0;32mI (10254) Ultrasonic Sensor: Distance: 9.90 cm[0m
+[0;32mI (10304) Ultrasonic Sensor: Distance: 9.28 cm[0m
+[0;32mI (10354) Ultrasonic Sensor: Distance: 8.32 cm[0m
+[0;32mI (10404) Ultrasonic Sensor: Distance: 7.79 cm[0m
+[0;32mI (10454) Ultrasonic Sensor: Distance: 8.13 cm[0m
+[0;32mI (10504) Ultrasonic Sensor: Distance: 8.06 cm[0m
+[0;32mI (10554) Ultrasonic Sensor: Distance: 8.04 cm[0m
+[0;32mI (10604) Ultrasonic Sensor: Distance: 8.04 cm[0m
+[0;32mI (10654) Ultrasonic Sensor: Distance: 8.15 cm[0m
+[0;32mI (10704) Ultrasonic Sensor: Distance: 8.57 cm[0m
+[0;32mI (10754) Ultrasonic Sensor: Distance: 8.21 cm[0m
+[0;32mI (10804) Ultrasonic Sensor: Distance: 7.79 cm[0m
+[0;32mI (10854) Ultrasonic Sensor: Distance: 7.79 cm[0m
+[0;32mI (10904) Ultrasonic Sensor: Distance: 8.23 cm[0m
+[0;32mI (10954) Ultrasonic Sensor: Distance: 8.13 cm[0m
+[0;32mI (11004) Ultrasonic Sensor: Distance: 8.15 cm[0m
+[0;32mI (11054) Ultrasonic Sensor: Distance: 8.49 cm[0m
+[0;32mI (11104) Ultrasonic Sensor: Distance: 8.49 cm[0m
+[0;32mI (11154) Ultrasonic Sensor: Distance: 8.06 cm[0m
+[0;32mI (11204) Ultrasonic Sensor: Distance: 8.04 cm[0m
+[0;32mI (11254) Ultrasonic Sensor: Distance: 8.04 cm[0m
+[0;32mI (11304) Ultrasonic Sensor: Distance: 8.40 cm[0m
+[0;32mI (11354) Ultrasonic Sensor: Distance: 7.96 cm[0m
+[0;32mI (11404) Ultrasonic Sensor: Distance: 8.32 cm[0m
+[0;32mI (11454) Ultrasonic Sensor: Distance: 8.30 cm[0m
+[0;32mI (11504) Ultrasonic Sensor: Distance: 7.79 cm[0m
+[0;32mI (11554) Ultrasonic Sensor: Distance: 8.04 cm[0m
+[0;32mI (11604) Ultrasonic Sensor: Distance: 7.43 cm[0m
+[0;32mI (11654) Ultrasonic Sensor: Distance: 7.96 cm[0m
+[0;32mI (11704) Ultrasonic Sensor: Distance: 7.17 cm[0m
+[0;32mI (11754) Ultrasonic Sensor: Distance: 6.83 cm[0m
+[0;32mI (11804) Ultrasonic Sensor: Distance: 6.48 cm[0m
+[0;32mI (11854) Ultrasonic Sensor: Distance: 5.87 cm[0m
+[0;32mI (11904) Ultrasonic Sensor: Distance: 5.27 cm[0m
+[0;32mI (11954) Ultrasonic Sensor: Distance: 5.52 cm[0m
+[0;32mI (12004) Ultrasonic Sensor: Distance: 5.44 cm[0m
+[0;32mI (12054) Ultrasonic Sensor: Distance: 5.25 cm[0m
+[0;32mI (12104) Ultrasonic Sensor: Distance: 4.65 cm[0m
+[0;32mI (12154) Ultrasonic Sensor: Distance: 4.48 cm[0m
+[0;32mI (12204) Ultrasonic Sensor: Distance: 4.30 cm[0m
+[0;32mI (12254) Ultrasonic Sensor: Distance: 4.12 cm[0m
+[0;32mI (12304) Ultrasonic Sensor: Distance: 4.03 cm[0m
+[0;32mI (12354) Ultrasonic Sensor: Distance: 4.03 cm[0m
+[0;32mI (12404) Ultrasonic Sensor: Distance: 3.69 cm[0m
+[0;32mI (12454) Ultrasonic Sensor: Distance: 4.12 cm[0m
+[0;32mI (12504) Ultrasonic Sensor: Distance: 4.22 cm[0m
+[0;32mI (12554) Ultrasonic Sensor: Distance: 4.12 cm[0m
+[0;32mI (12604) Ultrasonic Sensor: Distance: 3.69 cm[0m
+[0;32mI (12654) Ultrasonic Sensor: Distance: 4.03 cm[0m
+[0;32mI (12704) Ultrasonic Sensor: Distance: 4.03 cm[0m
+[0;32mI (12754) Ultrasonic Sensor: Distance: 4.03 cm[0m
+[0;32mI (12804) Ultrasonic Sensor: Distance: 4.03 cm[0m
+[0;32mI (12854) Ultrasonic Sensor: Distance: 4.29 cm[0m
+[0;32mI (12904) Ultrasonic Sensor: Distance: 3.34 cm[0m
+[0;32mI (12954) Ultrasonic Sensor: Distance: 3.69 cm[0m
+[0;32mI (13004) Ultrasonic Sensor: Distance: 3.58 cm[0m
+[0;32mI (13054) Ultrasonic Sensor: Distance: 3.94 cm[0m
+[0;32mI (13104) Ultrasonic Sensor: Distance: 3.52 cm[0m
+[0;32mI (13154) Ultrasonic Sensor: Distance: 3.41 cm[0m
+[0;32mI (13204) Ultrasonic Sensor: Distance: 3.33 cm[0m
+[0;32mI (13254) Ultrasonic Sensor: Distance: 3.69 cm[0m
+[0;32mI (13304) Ultrasonic Sensor: Distance: 4.29 cm[0m
+[0;32mI (13354) Ultrasonic Sensor: Distance: 4.12 cm[0m
+[0;32mI (13404) Ultrasonic Sensor: Distance: 3.69 cm[0m
+[0;32mI (13454) Ultrasonic Sensor: Distance: 3.16 cm[0m
+[0;32mI (13504) Ultrasonic Sensor: Distance: 3.52 cm[0m
+[0;32mI (13554) Ultrasonic Sensor: Distance: 3.86 cm[0m
+[0;32mI (13604) Ultrasonic Sensor: Distance: 2.98 cm[0m
+[0;32mI (13654) Ultrasonic Sensor: Distance: 3.77 cm[0m
+[0;32mI (13704) Ultrasonic Sensor: Distance: 3.34 cm[0m
+[0;32mI (13754) Ultrasonic Sensor: Distance: 3.34 cm[0m
+[0;32mI (13804) Ultrasonic Sensor: Distance: 3.52 cm[0m
+[0;32mI (13854) Ultrasonic Sensor: Distance: 4.03 cm[0m
+[0;32mI (13904) Ultrasonic Sensor: Distance: 4.39 cm[0m
+[0;32mI (13964) Ultrasonic Sensor: Distance: 251.38 cm[0m
+[0;32mI (14024) Ultrasonic Sensor: Distance: 247.03 cm[0m
+[0;32mI (14084) Ultrasonic Sensor: Distance: 224.73 cm[0m
+[0;32mI (14144) Ultrasonic Sensor: Distance: 244.66 cm[0m
+[0;32mI (14204) Ultrasonic Sensor: Distance: 247.05 cm[0m
+[0;32mI (14264) Ultrasonic Sensor: Distance: 244.92 cm[0m
+[0;32mI (14324) Ultrasonic Sensor: Distance: 244.47 cm[0m
+[0;32mI (14384) Ultrasonic Sensor: Distance: 244.92 cm[0m
+[0;32mI (14444) Ultrasonic Sensor: Distance: 243.70 cm[0m
+[0;32mI (14504) Ultrasonic Sensor: Distance: 244.64 cm[0m
+[0;32mI (14554) Ultrasonic Sensor: Distance: 48.72 cm[0m
+[0;32mI (14614) Ultrasonic Sensor: Distance: 244.30 cm[0m
+[0;32mI (14664) Ultrasonic Sensor: Distance: 48.23 cm[0m
+[0;32mI (14724) Ultrasonic Sensor: Distance: 248.55 cm[0m
+[0;32mI (14784) Ultrasonic Sensor: Distance: 246.65 cm[0m
+[0;32mI (14844) Ultrasonic Sensor: Distance: 246.74 cm[0m
+[0;32mI (14904) Ultrasonic Sensor: Distance: 233.19 cm[0m
+[0;32mI (14964) Ultrasonic Sensor: Distance: 250.13 cm[0m
+[0;32mI (15024) Ultrasonic Sensor: Distance: 253.91 cm[0m
+[0;32mI (15084) Ultrasonic Sensor: Distance: 265.00 cm[0m
+[0;32mI (15134) Ultrasonic Sensor: Distance: 153.56 cm[0m
+[0;32mI (15194) Ultrasonic Sensor: Distance: 253.89 cm[0m
+[0;32mI (15254) Ultrasonic Sensor: Distance: 253.17 cm[0m
+[0;32mI (15314) Ultrasonic Sensor: Distance: 252.35 cm[0m
+[0;32mI (15394) Ultrasonic Sensor: Distance: 0.00 cm[0m
+[0;32mI (15444) Ultrasonic Sensor: Distance: 114.34 cm[0m
+[0;32mI (15494) Ultrasonic Sensor: Distance: 105.20 cm[0m
+[0;32mI (15544) Ultrasonic Sensor: Distance: 72.15 cm[0m
+[0;32mI (15594) Ultrasonic Sensor: Distance: 72.70 cm[0m
+[0;32mI (15644) Ultrasonic Sensor: Distance: 65.44 cm[0m
+[0;32mI (15694) Ultrasonic Sensor: Distance: 64.40 cm[0m
+[0;32mI (15744) Ultrasonic Sensor: Distance: 65.19 cm[0m
+[0;32mI (15794) Ultrasonic Sensor: Distance: 65.08 cm[0m
+[0;32mI (15844) Ultrasonic Sensor: Distance: 65.27 cm[0m
+[0;32mI (15894) Ultrasonic Sensor: Distance: 98.54 cm[0m
+[0;32mI (15944) Ultrasonic Sensor: Distance: 102.11 cm[0m
+[0;32mI (15994) Ultrasonic Sensor: Distance: 97.41 cm[0m
+[0;32mI (16044) Ultrasonic Sensor: Distance: 101.06 cm[0m
+[0;32mI (16094) Ultrasonic Sensor: Distance: 100.62 cm[0m
+[0;32mI (16144) Ultrasonic Sensor: Distance: 101.87 cm[0m
+[0;32mI (16194) Ultrasonic Sensor: Distance: 100.64 cm[0m
+[0;32mI (16244) Ultrasonic Sensor: Distance: 101.87 cm[0m
+[0;32mI (16294) Ultrasonic Sensor: Distance: 101.85 cm[0m
+[0;32mI (16344) Ultrasonic Sensor: Distance: 103.96 cm[0m
+[0;32mI (16394) Ultrasonic Sensor: Distance: 103.96 cm[0m
+[0;32mI (16444) Ultrasonic Sensor: Distance: 103.96 cm[0m
+[0;32mI (16494) Ultrasonic Sensor: Distance: 103.95 cm[0m
+[0;32mI (16544) Ultrasonic Sensor: Distance: 103.95 cm[0m
+[0;32mI (16594) Ultrasonic Sensor: Distance: 101.00 cm[0m
+[0;32mI (16644) Ultrasonic Sensor: Distance: 103.95 cm[0m
+[0;32mI (16694) Ultrasonic Sensor: Distance: 103.52 cm[0m
+[0;32mI (16744) Ultrasonic Sensor: Distance: 101.87 cm[0m
+[0;32mI (16794) Ultrasonic Sensor: Distance: 103.96 cm[0m
+[0;32mI (16844) Ultrasonic Sensor: Distance: 105.63 cm[0m
+[0;32mI (16894) Ultrasonic Sensor: Distance: 106.48 cm[0m
+[0;32mI (16944) Ultrasonic Sensor: Distance: 104.37 cm[0m
+[0;32mI (16994) Ultrasonic Sensor: Distance: 108.58 cm[0m
+[0;32mI (17044) Ultrasonic Sensor: Distance: 107.70 cm[0m
+[0;32mI (17094) Ultrasonic Sensor: Distance: 106.48 cm[0m
+[0;32mI (17144) Ultrasonic Sensor: Distance: 108.15 cm[0m
+[0;32mI (17194) Ultrasonic Sensor: Distance: 104.39 cm[0m
+[0;32mI (17244) Ultrasonic Sensor: Distance: 109.79 cm[0m
+[0;32mI (17294) Ultrasonic Sensor: Distance: 104.37 cm[0m
+[0;32mI (17344) Ultrasonic Sensor: Distance: 106.48 cm[0m
+[0;32mI (17394) Ultrasonic Sensor: Distance: 105.20 cm[0m
+[0;32mI (17444) Ultrasonic Sensor: Distance: 103.52 cm[0m
+[0;32mI (17494) Ultrasonic Sensor: Distance: 101.68 cm[0m
+[0;32mI (17544) Ultrasonic Sensor: Distance: 103.09 cm[0m
+[0;32mI (17594) Ultrasonic Sensor: Distance: 105.16 cm[0m
+[0;32mI (17644) Ultrasonic Sensor: Distance: 101.43 cm[0m
+[0;32mI (17694) Ultrasonic Sensor: Distance: 102.64 cm[0m
+[0;32mI (17744) Ultrasonic Sensor: Distance: 101.39 cm[0m
+[0;32mI (17794) Ultrasonic Sensor: Distance: 103.09 cm[0m
+[0;32mI (17844) Ultrasonic Sensor: Distance: 103.09 cm[0m
+[0;32mI (17894) Ultrasonic Sensor: Distance: 103.09 cm[0m
+[0;32mI (17944) Ultrasonic Sensor: Distance: 101.68 cm[0m
+[0;32mI (17994) Ultrasonic Sensor: Distance: 103.52 cm[0m
+[0;32mI (18044) Ultrasonic Sensor: Distance: 103.53 cm[0m
